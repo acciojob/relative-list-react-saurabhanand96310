@@ -6,10 +6,10 @@ const App = () => {
     <div id="main">
                {/* Do not remove the main div */}
                
-               <ol key="relativeList">
+               <ol id="relativeList" key="relativeList">
                 {
                 relatives.map((relative,index)=>(
-                  <li key={`relativeListItem${index+1}`}>{relative}</li>
+                  <li id={`relativeListItem${index+1}`} key={`relativeListItem${index+1}`}>{relative}</li>
                 ))
               }
                </ol>
