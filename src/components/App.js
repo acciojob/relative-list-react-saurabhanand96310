@@ -4,12 +4,12 @@ const App = () => {
   return (
     <div id="main">
                {/* Do not remove the main div */}
-               const relatives=[sarvesh,raj,gopal,ankit,rajeev]
+               const relatives=["sarvesh","raj","gopal","ankit","rajeev"]
                <ol key="relativeList">
                 {
-                relatives.map((relative,index)=>{
-                  <li key={"relativeListItem$(index+1)"}>relative</li>
-                })
+                relatives.map((relative,index)=>(
+                  <li key={"relativeListItem${index+1}"}>relative</li>
+                ))
               }
                </ol>
     </div>
